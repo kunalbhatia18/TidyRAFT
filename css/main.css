@@ -1,0 +1,758 @@
+@font-face {
+    font-family: "Brandon";
+    src: url("../fonts/Brandon_light_it.otf");
+}
+@font-face{
+    font-family: "glyphicons";
+    src:url(../fonts/glyphicons-halflings-regular.svg)
+}
+@font-face {
+    font-family: "BankGothic-Lt";
+    src: url("../fonts/BankGothic-Lt-BT-Light.ttf");
+}
+
+
+
+
+body{
+    /* background-image: url(../images/coffee.jpg);
+    background-position: fixed; */
+    padding:0;
+    margin:0;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+/* #home{
+    background-image: url(../images/fruit.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}  */
+#left{
+    font-family: "Brandon";
+    padding-top:-10px;
+    color:white;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+.topnav{
+    margin:0;
+    padding:0;
+    height: 14vh;
+    background-color:#23a7ff;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+.topnav ul{
+    display:flex;
+    margin:0;
+    justify-content: flex-end;
+    padding-top:30px;
+    padding-right: 30px;
+    list-style: none;
+
+}
+.topnav ul li{
+    padding-left:40px;
+    font-size: 1.5em;
+}
+.topnav li:first-child{
+    margin-right: auto;
+} 
+.topnav ul li a{
+    text-decoration: none;
+    font-weight: 800;
+    font-family: "Brandon";
+    color:black;
+    transition-duration: 0.21s;
+}
+.topnav ul li a:hover{
+    color:white;
+    background-color: darkblue;
+    padding:10px;
+}
+.board{
+    text-align: center;
+    padding-top:130px;
+    height:88vh;
+
+}
+.tagline{
+    background:white;
+    /* opacity: 0.7; */
+}
+.board img{
+    animation: moveDown 0.8s ease-out 0.8s;
+    animation-fill-mode: backwards;
+    background-color: white;
+    /* opacity: 0.7; */
+}
+#arrow{
+    height:30px;
+    width:50px;
+    margin: 0 0 0 48%;
+    position: absolute;
+    animation: MoveupDown 1s linear infinite;
+}
+@keyframes MoveupDown{
+    0%, 100%{
+        bottom:0;
+    }
+    40%{
+        bottom:20px;
+    }
+}
+.tagline{
+    font-family: "Brandon";
+    font-size: 1.5em;
+    position: relative;
+    width:20%;
+    animation: moveUp 0.8s ease-out 0.8s;
+    animation-fill-mode: backwards;
+    margin-left: 40%;
+}
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    80% {
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    80%{
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+#about{
+    background-color:#33adff;
+    height:190vh;
+    color:black;
+ }
+#about .head{
+	/* position: absolute;  */
+	top: 0; 
+	left: 0;
+	margin-top:-20px;
+	width: 100%;
+	font-family: "BankGothic-Lt";
+	text-transform:uppercase;
+	text-align:center;
+	font-size: 70px;
+	line-height:70px;
+	color:rgba(97, 145, 248, 0.932);
+    /* z-index:1; */
+}
+.head h1{
+    margin:0;
+    padding:0;
+}
+#about .head{
+	margin-top:-20px;
+	font-size: 40px;
+	line-height:40px;
+}
+#about .head h1{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 50px;
+}
+.headert{
+    text-align: center;
+}
+.headert h1{
+    font-size: 2em;
+    padding-top: 50px;
+    font-family: "BankGothic-Lt";
+}
+.headert p{
+    font-family: "Brandon";
+}
+.monitor{
+    float: right;
+    width:40%;
+    padding-top: 100px;
+}
+ #down
+{
+    margin-top: 110px;
+    margin-left: 10%;
+} 
+.monitor img{
+    height:350px;
+    padding-left: 40px;
+}
+
+.righty{
+    margin-top:5%;
+    width:40%;
+    float:left;
+    margin-left:5%;
+}
+.righty img{
+height:350px;
+margin-top: 110px;
+margin-left: 42.5%;
+margin-left: 35%;
+/* float:left; */
+}
+.cont{
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid;
+    width:50px;
+    font-size :2.75em;
+    font-weight: 500;
+}
+.btn{
+	padding: 10px;
+	position: relative;
+    top: 20px;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(230, 230, 230);
+    transition-duration: 0.7s;
+    color:black;
+    text-decoration: none;
+}
+.btn a{
+    color:white;
+    text-decoration: none;   
+}
+.btn:hover{
+    background: linear-gradient(to right, #00c3ff, #ffff1c);
+}
+#team {
+    margin:0;
+    padding:0;
+    background-image:  linear-gradient(to right bottom, rgba(18, 68, 177,0.45), rgba(254, 255, 254, 0.426),rgba(238, 169, 65, 0.35)), url(../images/city.jpg);
+    height:130vh;
+    background-attachment: fixed;
+    /* background: linear-gradient(to left, rgba(251, 240, 240,0.3),rgba(241, 240, 240,0.34)); */
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#team .shade{
+    margin-top:-20px;
+	font-size: 40px;
+    line-height:40px;
+    top: 0; 
+	left: 0;
+	margin-top:-20px;
+	width: 100%;
+	font-family: "BankGothic-Lt";
+	text-transform:uppercase;
+	text-align:center;
+	line-height:70px;
+    color:rgba(32, 32, 32, 0.5);
+
+}
+#team .shade h1{
+    margin:0;
+    padding-top:50px;
+    font-size:2em;
+}
+#team .shadow h1{
+    text-align: center;
+    padding-top:50px;
+    font-size: 2em;
+    font-family: "BankGothic-Lt";
+    margin:0;
+    padding-top: 50px;
+    color:rgb(78, 78, 78);
+}
+.shadow p{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-weight: 700;
+    font-family: "Brandon";
+}
+#container{
+    position: relative;
+    width:300px;
+    float:left;
+    opacity: 1;
+    margin-top:100px;
+    margin-left:10%;
+    height:500px;
+}
+.card{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    /* margin:100px 0 0 50%; */
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: all 0.6s ease-in-out;
+}
+.card:hover{
+    transform: rotateY(180deg)
+}
+.front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    background: linear-gradient(to left, rgb(41, 152, 255), rgb(42, 21, 230));
+    color:gray;
+    backface-visibility: hidden;
+    
+}
+.back{
+    position: absolute;
+    height: 100%;
+    color:black;
+    background: rgb(104, 0, 173);
+    transform:rotateY(180deg);
+    margin:0;
+    padding:0;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.fronts{
+    color:black;
+    background-image:  linear-gradient(to right bottom, rgba(41, 152, 255,0.5), rgba(86, 67, 250,0.5)), url(../images/me.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    height:40vh;
+}
+.fronts h4{
+    margin: 0;
+    color:rgb(224, 224, 224);
+    padding:350px 0 0 60px;
+    font-size: 1.5em;
+    position: absolute;
+    font-family: "BankGothic-Lt";
+    text-align: center;
+    
+}
+.ul li{
+    list-style: none;
+    color:white;
+    font-size: 1.5em;
+    font-family: "Brandon";
+    font-weight: 500;
+    margin-top:40px;
+}
+
+
+
+
+#container2{
+    position: relative;
+    width:300px;
+    float:left;
+    margin-top:100px;
+    margin-left:10%;
+    height:500px;
+    opacity: 1;
+}
+.card2{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    /* margin:100px 0 0 50%; */
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: all 0.6s ease-in-out;
+}
+.card2:hover{
+    transform: rotateY(180deg)
+}
+.front2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    background: linear-gradient(to left,rgb(126, 213, 111),rgb(40, 180, 133));
+    color:gray;
+    backface-visibility: hidden;
+    
+}
+.back2{
+    position: absolute;
+    height: 100%;
+    color:black;
+    background: #55c57a;
+    transform:rotateY(180deg);
+    margin:0;
+    padding:0;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.fronts2{
+    color:black;
+    background-image:  linear-gradient(to right bottom, rgba(126, 213, 111,0.5),rgba(40, 180, 133,0.5)), url(../images/raghav.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    height:40vh;
+}
+.fronts2 h4{
+    margin: 0;
+    color:rgb(224, 224, 224);
+    padding:350px 0 0 60px;
+    font-size: 1.5em;
+    position: absolute;
+    font-family: "BankGothic-Lt";
+    text-align: center;
+    
+}
+.ul2 li{
+    list-style: none;
+    color:white;
+    font-size: 1.5em;
+    font-family: "Brandon";
+    font-weight: 500;
+    margin-top:40px;
+}
+
+
+
+
+
+
+#container3{
+    position: relative;
+    width:300px;
+    float:left;
+    margin-top:100px;
+    margin-left:10%;
+    height:500px;
+    opacity: 1;
+}
+.card3{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    /* margin:100px 0 0 50%; */
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: all 0.6s ease-in-out;
+}
+.card3:hover{
+    transform: rotateY(180deg)
+}
+.front3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    background: linear-gradient(to left,rgb(255, 185, 0), rgb(255, 119, 48));
+    color:gray;
+    backface-visibility: hidden;
+    
+}
+.back3{
+    position: absolute;
+    height: 100%;
+    color:black;
+    background: orange;
+    transform:rotateY(180deg);
+    margin:0;
+    padding:0;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.fronts3{
+    color:black;
+    background-image:  linear-gradient(to right bottom, rgba(255, 185, 0,0.5), rgba(255, 119, 48,0.5)), url(../images/gn.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    height:40vh;
+}
+.fronts3 h4{
+    margin: 0;
+    color:rgb(224, 224, 224);
+    padding:350px 0 0 60px;
+    font-size: 1.5em;
+    position: absolute;
+    font-family: "BankGothic-Lt";
+    text-align: center;
+    
+}
+.ul3 li{
+    list-style: none;
+    color:white;
+    font-size: 1.5em;
+    font-family: "Brandon";
+    font-weight: 500;
+    margin-top:40px;
+}
+.social{
+    height:60px;
+}
+.bluh{
+    padding-left: 30%;
+    padding-top:15%;
+}
+
+
+#services{
+    margin:0;
+    padding:0;
+    background-color: rgb(65, 255, 47);
+    height:130vh;
+    background-attachment: fixed;
+
+}
+.servicehead{
+	font-size: 40px;
+    line-height:40px;
+    top: 0; 
+    left: 0;
+	width: 100%;
+	font-family: "BankGothic-Lt";
+	text-transform:uppercase;
+	text-align:center;
+	line-height:70px;
+    color:#11ac02;
+
+
+}
+.servicehead h1{
+    margin:0;
+    padding-top:20px;
+    font-size:2em;
+    
+}
+.seraser h1{
+    font-family: "BankGothic-Lt";
+    font-weight: 500;
+    text-align: center;
+    padding-top:30px;
+    font-size: 2em;
+
+}
+.seraser p{
+    text-align: center;
+    font-weight: 500;
+    font-family: "Brandon";
+}
+
+.straight{
+    float:left;
+    margin:0;
+    padding:0;
+    width:25%;
+    transition: all 0.6s ; 
+}
+.horizontal{
+    margin:0;
+    height:35%;
+    width: 100%;
+    padding-top:100px;
+}
+.straight p{
+    text-align:center;
+    margin:0;
+    padding:0;
+    background:rgb(219, 219, 219);
+}
+.straight:hover{
+    opacity:0.7;
+    cursor: pointer;
+}
+
+#case{
+    margin:0;
+    padding:0;
+    background-color: rgb(255, 163, 57);
+    height:90vh;
+    background-attachment: fixed;
+}
+
+.casehead{
+	font-size: 40px;
+    line-height:40px;
+    top: 0; 
+    left: 0;
+	width: 100%;
+	font-family: "BankGothic-Lt";
+	text-transform:uppercase;
+	text-align:center;
+	line-height:70px;
+    color:#ac5d02;
+
+
+}
+.casehead h1{
+    margin:0;
+    padding-top:20px;
+    font-size:2em;
+    
+}
+.caser h1{
+    font-family: "BankGothic-Lt";
+    font-weight: 500;
+    text-align: center;
+    padding-top:30px;
+    font-size: 2em;
+
+}
+.caser p{
+    text-align: center;
+    font-weight: 500;
+    font-family: "Brandon";
+}
+
+
+
+#contact{
+    margin:0;
+    padding:0;
+    background-color: rgb(255, 255, 255);
+    height:100vh;
+    background-attachment: fixed;
+
+}
+.contacthead{
+	font-size: 40px;
+    line-height:40px;
+    top: 0; 
+    left: 0;
+	width: 100%;
+	font-family: "BankGothic-Lt";
+	text-transform:uppercase;
+	text-align:center;
+	line-height:70px;
+    color:#3b3b3b;
+
+
+}
+.contacthead h1{
+    margin:0;
+    padding-top:20px;
+    font-size:2em;
+    
+}
+.contacter h1{
+    font-family: "BankGothic-Lt";
+    font-weight: 500;
+    text-align: center;
+    padding-top:30px;
+    font-size: 2em;
+
+}
+.contacter p{
+    text-align: center;
+    font-weight: 500;
+    font-family: "Brandon";
+}
+
+.start{
+    margin-right:50%;
+    padding-top: 30%;
+    margin-left:35%;
+}
+.start span{
+    background-color: aliceblue;
+    padding:10px;
+    width:inherit;
+    font-family: 'Lato', sans-serif;
+    transition: all 1s;
+}
+.start span:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #00c3ff, #ffff1c);
+}
+.start2{
+    margin-left: 35%;
+    padding-top:4%;
+}
+.start2 span{
+    background-color: aliceblue;
+    padding:10px;
+    width:inherit;
+    font-family: 'Lato', sans-serif;
+    transition:all 1s;
+}
+.start2 span:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #00c3ff, #ffff1c);
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #23a7ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(4, 99, 177);
+}
+
+.containers {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.open{
+    padding-top:10%;
+    padding-left: 43%;
+}
+open span{
+    font-family:'Lato', sans-serif;
+}
+.open a{
+    background-color: rgb(218, 218, 218);
+    padding:10px;
+    text-decoration: none;
+    color:black;
+}
+
+.open a:hover{
+    background:linear-gradient(to right, #00c3ff, #ffff1c);
+}
+.spaces{
+    margin-top:10%;
+    float:left;
+}
+
